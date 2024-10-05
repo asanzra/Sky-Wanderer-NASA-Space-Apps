@@ -1,6 +1,7 @@
-[gd_scene load_steps=23 format=3 uid="uid://cc1m2a1obsyn4"]
+[gd_scene load_steps=25 format=3 uid="uid://cc1m2a1obsyn4"]
 
 [ext_resource type="Script" path="res://addons/fpc/character.gd" id="1_0t4e8"]
+[ext_resource type="Script" path="res://addons/fpc/animatedText.gd" id="3_e3ele"]
 [ext_resource type="Script" path="res://addons/fpc/EditorModule.gd" id="3_v3ckk"]
 [ext_resource type="Script" path="res://addons/fpc/debug.gd" id="3_x1wcc"]
 
@@ -351,9 +352,37 @@ MarginContainer/constants/margin_top = 10
 
 [sub_resource type="Animation" id="Animation_wxup5"]
 resource_name = "show"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.766667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_0omm3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_288vi"]
 _data = {
+"RESET": SubResource("Animation_0omm3"),
 "show": SubResource("Animation_wxup5")
 }
 
@@ -425,22 +454,32 @@ layout_mode = 2
 [node name="VBoxContainer" type="VBoxContainer" parent="UserInterface/DebugPanel/MarginContainer"]
 layout_mode = 2
 
-[node name="Node" type="Node" parent="UserInterface"]
+[node name="AnimatedText" type="Node" parent="UserInterface"]
+script = ExtResource("3_e3ele")
 
-[node name="Label" type="Label" parent="UserInterface/Node"]
-offset_left = 83.0
-offset_top = 215.0
-offset_right = 1094.0
-offset_bottom = 434.0
+[node name="Label" type="Label" parent="UserInterface/AnimatedText"]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -55.5
+offset_bottom = 55.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
 text = "Welcome to the NASA mission.
 Your job is to explore the galaxy.
-From the NASA Base Station,
-we will guide you through your journey."
+From the NASA Base Station, we will guide you through your journey."
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="UserInterface/Node"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UserInterface/AnimatedText"]
 libraries = {
 "": SubResource("AnimationLibrary_288vi")
 }
+speed_scale = 0.135
 
 [node name="CrouchCeilingDetection" type="ShapeCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

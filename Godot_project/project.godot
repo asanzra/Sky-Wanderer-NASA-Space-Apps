@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="first person controller 2.0"
+config/name="Sky-Wanderer"
 run/main_scene="res://test_world.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
