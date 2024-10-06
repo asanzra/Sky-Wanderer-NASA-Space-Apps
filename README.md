@@ -65,21 +65,24 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+Our project, "Sky Wanderer" consists in a learning tool fundamentally concieved with the purpose to, not only make scientific data accessible and understandable to a non-technical audience, but also engage the general public with the unknown and encourage them to look beyond. We achieve this objective through awe-inspiring, but at the same time scientifically accurate simulations of unknown night-skies that only existed in each one´s imagination until know. 
+
 ### Project Title and Description
 
-Title: Sky Wanderer 
+Title: Sky Wanderer
 
-Overview: Our project, "Sky Wanderer" consists in a learning tool fundamentally conceived with the purpose to, not only make scientific data accessible and understandable to a non-technical audience, but also engage the general public with the unknown and encourage them to look beyond. We achieve this objective through awe-inspiring, but at the same time scientifically accurate simulations of unknown night-skies that only existed in each one´s imagination until know. 
+Problem Solved: Nasa SpaceApps 2024 Challenge: Exosky!
 
-Problem Solved: Nasa SpaceApps 2024 Challenge: Exosky! 
+Description: 
 
-We can request the data from the [Gaia Data Release 3](https://www.cosmos.esa.int/web/gaia/data-release-3). 
+Our project aims to bring the immensity of space closer to anyone interested in science, astronomy, and space...
+We created an interface that first gets specific data from the Gaia Archive through a query. This data refers to the stars that someone would see at the surface of a particular exoplanet, with the stars at the correct coordinates.  Finally, these stars and exoplanets are plotted in Godot with a terrain simulating the surface of a planet. We can request the data from the [Gaia Data Release 3](https://www.cosmos.esa.int/web/gaia/data-release-3) using [ADQL](https://www.ivoa.net/documents/ADQL/20230418/PR-ADQL-2.1-20230418.html#tth_sEc4.6.1). 
 
 This data includes astrophysical parameters and source class probabilities for about 470 million and 1500 million sources, respectively, including stars, galaxies, and quasars. However, on this project we have focused on the position of the stars visible from a position diferent than Earth, that includes:
 - The right ascension coordinate for the source in degrees.
 - The declination coordinate for the source in degrees.
 - The parallax coordinate for the source in arcsecs.
-- The magnitude of the source from our point of view.
+- The magnitude of the source from our point of view. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
