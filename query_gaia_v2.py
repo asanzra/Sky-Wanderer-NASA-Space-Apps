@@ -1,11 +1,6 @@
 from astroquery.gaia import Gaia
 
 def	get_table(ra_exo, dec_exo, parallax_exo, num_stars, min_mag_p):
-	"""
-	Query the Gaia archive for all sources within a certain radius from the given point,
-	which have parallax below the given limit (within 3 sigma),
-	and save the result as a numpy zip archive.
-	"""
 	job = Gaia.launch_job(
     "WITH cartesian_coords AS ( " +
     "SELECT " +
