@@ -105,6 +105,13 @@ The project will feature educational content through informative pop-ups and aud
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Usage
+
+![Game Screenshot](https://github.com/asanzra/Sky-Wanderer-NASA-Space-Apps/blob/main/screenshot1.jpeg)
+![Game Screenshot with info](https://github.com/asanzra/Sky-Wanderer-NASA-Space-Apps/blob/main/Captura_info.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## References
 
 * [Gaia Data Release 3](https://www.cosmos.esa.int/web/gaia/data-release-3)
@@ -131,14 +138,9 @@ Project Link: [https://github.com/asanzra/Sky-Wanderer-NASA-Space-Apps](https://
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## Video Demo
 https://youtu.be/FcCekx3_jvA
 https://github.com/user-attachments/assets/49a90214-1aa5-4647-beba-91c0dab4ede1
-
-## Screenshots
-
-![Alt Text](https://github.com/asanzra/Sky-Wanderer-NASA-Space-Apps/blob/main/Captura_info.png)
 
 
 
