@@ -139,8 +139,10 @@ Project Link: [https://github.com/asanzra/Sky-Wanderer-NASA-Space-Apps](https://
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Video Demo
-https://youtu.be/FcCekx3_jvA
-https://github.com/user-attachments/assets/49a90214-1aa5-4647-beba-91c0dab4ede1
+
+[Demo video v1](https://github.com/user-attachments/assets/49a90214-1aa5-4647-beba-91c0dab4ede1)
+<br />
+[Demo video v2](https://youtu.be/FcCekx3_jvA)
 
 
 
