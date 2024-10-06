@@ -13,6 +13,7 @@ sky_material = SubResource("PanoramaSkyMaterial_qpdkk")
 [sub_resource type="Environment" id="Environment_20rw3"]
 background_mode = 2
 sky = SubResource("Sky_2iust")
+sky_rotation = Vector3(-2.23577, 0.436332, -1.63188)
 tonemap_mode = 1
 ssao_enabled = true
 
