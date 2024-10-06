@@ -31,15 +31,11 @@
     <br />
     <a href="https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/explorers-of-the-sky/"><strong>Explore our team and project page »</strong></a>
     <br />
-    <a href="https://youtu.be/FcCekx3_jvA">View Demo</a> <!-- UPDATE URL OF DEMO!!!!-->
+    <a href="https://youtu.be/FcCekx3_jvA">View Demo</a>
     <!-- ·
     <a href="https://github.com/asanzra/Sky-Wanderer-NASA-Space-Apps/issues">Report Bug/Request Feature</a> -->
   </p>
 </div>
-
-
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -111,6 +107,12 @@ The project will feature educational content through informative pop-ups and aud
 ![Game Screenshot with info](https://github.com/asanzra/Sky-Wanderer-NASA-Space-Apps/blob/main/Captura_info.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Installation Instructions
+
+Once you are in our GitHub repository page, go to the folder “windows_executables”. Inside, click on “current” and click on the following executable: “sky_wanderer.exe”. 
+
+This will let you download and use our app as long as you have a Windows OS. 
 
 ## References
 
