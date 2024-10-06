@@ -1,8 +1,10 @@
 # Sky-Wanderer-NASA-Space-Apps
 
 
-## Short Video Demo
+## Video Demo
 
-https://github.com/user-attachments/assets/8adc7c86-ca0a-4b6b-8f0a-64eb19256745 
+https://github.com/user-attachments/assets/49a90214-1aa5-4647-beba-91c0dab4ede1
+
+## Screenshots
 
 ![Alt Text](https://github.com/asanzra/Sky-Wanderer-NASA-Space-Apps/blob/main/Captura_info.png)
