@@ -12,14 +12,21 @@ def	get_table(ra_exo, dec_exo, parallax_exo, num_stars, min_mag_p):
     "FROM gaiadr3.gaia_source_lite" +
     ")" +
     f"SELECT TOP {num_stars} " +
-            "source_id, ra, dec, parallax, phot_g_mean_mag, dist_t " +
+            "c1.source_id, c1.x_rel, c1.y_rel, c1.z_rel, c1.phot_g_mean_mag, p.phot_g_mean_mag_p, c1.dist_t, p.dist_p, c1.ra, c1.dec, c1.parallax " +
         "FROM " +
-            "cartesian_coords AS c " +
+            "cartesian_coords AS c1, " +
+			"(SELECT o.dist_p, (c2.phot_g_mean_mag - 5 * LOG10 (c2.dist_t / o.dist_p)) AS phot_g_mean_mag_p " +
+            "FROM cartesian_coords AS c2, " +
+			"(SELECT (SQRT(POWER(x_rel, 2) + POWER(y_rel, 2) + POWER(z_rel, 2))) AS dist_p " +
+            "FROM cartesian_coords) AS o) AS p " +
     "WHERE " +
+        "parallax != 0 AND " +
         "x_rel + y_rel + z_rel != 0 AND " +
-        f"(phot_g_mean_mag - 5 * LOG10 (dist_t / (SQRT(POWER(x_rel, 2) + POWER(y_rel, 2) + POWER(z_rel, 2))))) < {min_mag_p} " +
+        f"ra < ABS(radians({ra_exo} + 90)) AND " +
+        f"ra > ABS(radians({ra_exo} - 90)) AND " +
+        f"p.phot_g_mean_mag_p < {min_mag_p} " *
     "ORDER BY phot_g_mean_mag ASC "
 	)
 	table = job.get_results()
-	table.write('gaia_stars.xml', format='votable')
+	table.write('gaia_stars.csv', format='csv')
 	return(table)
