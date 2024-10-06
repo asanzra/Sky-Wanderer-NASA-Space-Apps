@@ -3,6 +3,7 @@ extends Node # Use the appropriate base class (Node2D, Control, etc.)
 @onready var picture = $TextureRect # Reference to the TextureRect node
 
 func _ready():
+	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	picture.visible = false # Ensure the picture is initially hidden
 
 func _process(delta):
