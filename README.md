@@ -115,6 +115,21 @@ The project will feature educational content through informative pop-ups and aud
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Contact
+
+Alejandro Sanz Ramirez - [Linkedin](https://www.linkedin.com/in/alejandro-sanz-ramirez-3b631a201/) - asanz2003@gmail.com
+
+Tristán Ortiz Roset - [Linkedin](https://www.linkedin.com/in/tristan-ortiz-roset-ba2762221/) - tortiz.roset@gmail.com
+
+Claudia Ortiz Roset - [Linkedin](https://www.linkedin.com/in/claudia-ortiz-roset) - claudia.or102@gmail.com 
+
+Claudia Garcia Talavera - [Linkedin](https://www.linkedin.com/in/claudia-garc%C3%ADa-talavera-060289215) - claudiagatalavera@gmail.com
+
+Jorge Jiménez Cabrera - [Linkedin](https://www.linkedin.com/in/jorge-jimenez-cabrera/) - jorge.kp10@gmail.com
+
+Project Link: [https://github.com/asanzra/Sky-Wanderer-NASA-Space-Apps](https://github.com/asanzra/Sky-Wanderer-NASA-Space-Apps)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Video Demo
