@@ -69,11 +69,11 @@ Our project, "Sky Wanderer" consists in a learning tool fundamentally concieved 
 
 ### Project Title and Description
 
-Title: Sky Wanderer
+<b>Title:</b> Sky Wanderer
 
-Problem Solved: Nasa SpaceApps 2024 Challenge: Exosky!
+<b>Problem Solved:</b>  Nasa SpaceApps 2024 Challenge: Exosky!
 
-Description: 
+<b>Description:</b> 
 
 Our project aims to bring the immensity of space closer to anyone interested in science, astronomy, and space...
 We created an interface that first gets specific data from the Gaia Archive through a query. This data refers to the stars that someone would see at the surface of a particular exoplanet, with the stars at the correct coordinates.  Finally, these stars and exoplanets are plotted in Godot with a terrain simulating the surface of a planet. We can request the data from the [Gaia Data Release 3](https://www.cosmos.esa.int/web/gaia/data-release-3) using [ADQL](https://www.ivoa.net/documents/ADQL/20230418/PR-ADQL-2.1-20230418.html#tth_sEc4.6.1). 
