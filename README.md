@@ -31,7 +31,7 @@
     <br />
     <a href="https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/explorers-of-the-sky/"><strong>Explore our team and project page »</strong></a>
     <br />
-    <a href="https://github.com/user-attachments/assets/49a90214-1aa5-4647-beba-91c0dab4ede1">View Demo</a> <!-- UPDATE URL OF DEMO!!!!-->
+    <a href="https://youtu.be/FcCekx3_jvA">View Demo</a> <!-- UPDATE URL OF DEMO!!!!-->
     <!-- ·
     <a href="https://github.com/asanzra/Sky-Wanderer-NASA-Space-Apps/issues">Report Bug/Request Feature</a> -->
   </p>
@@ -133,8 +133,8 @@ Project Link: [https://github.com/asanzra/Sky-Wanderer-NASA-Space-Apps](https://
 
 
 ## Video Demo
-
-<!-- https://github.com/user-attachments/assets/49a90214-1aa5-4647-beba-91c0dab4ede1 -->
+https://youtu.be/FcCekx3_jvA
+https://github.com/user-attachments/assets/49a90214-1aa5-4647-beba-91c0dab4ede1
 
 ## Screenshots
 
