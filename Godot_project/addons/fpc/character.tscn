@@ -1,10 +1,11 @@
-[gd_scene load_steps=33 format=3 uid="uid://cc1m2a1obsyn4"]
+[gd_scene load_steps=34 format=3 uid="uid://cc1m2a1obsyn4"]
 
 [ext_resource type="Script" path="res://addons/fpc/character.gd" id="1_0t4e8"]
 [ext_resource type="Script" path="res://addons/fpc/animatedText.gd" id="3_e3ele"]
 [ext_resource type="Script" path="res://addons/fpc/EditorModule.gd" id="3_v3ckk"]
 [ext_resource type="Script" path="res://addons/fpc/debug.gd" id="3_x1wcc"]
 [ext_resource type="Texture2D" uid="uid://cw4oounuhas3n" path="res://Visor Guapo.png" id="4_3jn5p"]
+[ext_resource type="FontFile" uid="uid://cxtncmbf67kgj" path="res://Chakra_Petch/ChakraPetch-SemiBold.ttf" id="4_nn2eg"]
 [ext_resource type="Script" path="res://addons/fpc/texture_rect.gd" id="5_oqdqr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kp17n"]
@@ -540,7 +541,8 @@ offset_top = -55.5
 offset_bottom = 55.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 25
+theme_override_fonts/font = ExtResource("4_nn2eg")
+theme_override_font_sizes/font_size = 30
 text = "Welcome to Sky Wanderer.
 Your job is to explore the galaxy.
 From the NASA Base Station, we will guide you through your journey.
@@ -599,6 +601,18 @@ script = ExtResource("5_oqdqr")
 libraries = {
 "": SubResource("AnimationLibrary_0dng1")
 }
+
+[node name="Journal2" type="Label" parent="UserInterface"]
+offset_left = 811.0
+offset_top = 16.0
+offset_right = 1111.0
+offset_bottom = 229.0
+theme_override_colors/font_color = Color(0.27451, 0.968627, 0.141176, 0.454902)
+theme_override_fonts/font = ExtResource("4_nn2eg")
+theme_override_font_sizes/font_size = 25
+text = "Current World: Kepler 22b"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="CrouchCeilingDetection" type="ShapeCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
