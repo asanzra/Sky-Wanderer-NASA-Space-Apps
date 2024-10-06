@@ -48,7 +48,7 @@
     <li>
       <a href="#About The Project">About The Project</a>
       <ul>
-        <li><a href="#project-title-and-description">Project Title and Description</a><\li>
+        <li><a href="#project-title-and-description">Project Title and Description</a></li>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#Features">Features</a></li>
         <li><a href="#Usage">Usage</a></li>
@@ -62,6 +62,34 @@
   </ol>
 </details>
 
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+The objective of this project is to is to create a model capable of predicting the country (from a list of nine) that will have the most surplus of green energy in the next hour.
+We can request the data from the [Gaia Data Release 3](https://www.cosmos.esa.int/web/gaia/data-release-3). 
+
+This data includes astrophysical parameters and source class probabilities for about 470 million and 1500 million sources, respectively, including stars, galaxies, and quasars. However, on this project we have focused on the position of the stars visible from a position diferent than Earth, that includes:
+- The right ascension coordinate for the source in degrees.
+- The declination coordinate for the source in degrees.
+- The parallax coordinate for the source in arcsecs.
+- The magnitude of the source from our point of view.
+
+We 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+### Built With
+
+* [Tensorflow](https://www.tensorflow.org/)
+* [Scikit-learn](https://scikit-learn.org/)
+* [Numpy](https://numpy.org/)
+* [Pandas](https://pandas.pydata.org/)
+* [Matplotlib](https://matplotlib.org/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Video Demo
 
