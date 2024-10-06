@@ -1,10 +1,11 @@
-[gd_scene load_steps=29 format=3 uid="uid://cc1m2a1obsyn4"]
+[gd_scene load_steps=33 format=3 uid="uid://cc1m2a1obsyn4"]
 
 [ext_resource type="Script" path="res://addons/fpc/character.gd" id="1_0t4e8"]
 [ext_resource type="Script" path="res://addons/fpc/animatedText.gd" id="3_e3ele"]
 [ext_resource type="Script" path="res://addons/fpc/EditorModule.gd" id="3_v3ckk"]
 [ext_resource type="Script" path="res://addons/fpc/debug.gd" id="3_x1wcc"]
 [ext_resource type="Texture2D" uid="uid://cw4oounuhas3n" path="res://Visor Guapo.png" id="4_3jn5p"]
+[ext_resource type="Script" path="res://addons/fpc/texture_rect.gd" id="5_oqdqr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kp17n"]
 albedo_color = Color(0.909804, 0.596078, 0, 1)
@@ -387,9 +388,44 @@ _data = {
 "show": SubResource("Animation_wxup5")
 }
 
+[sub_resource type="Animation" id="Animation_j2oer"]
+resource_name = "show"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Countdown:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_c40xd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Countdown:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rpcis"]
+_data = {
+"RESET": SubResource("Animation_c40xd"),
+"show": SubResource("Animation_j2oer")
+}
+
 [sub_resource type="Animation" id="Animation_d0xlq"]
 resource_name = "Quitar casco"
-length = 7.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -397,7 +433,7 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(6, 7),
+"times": PackedFloat32Array(0, 0.833333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(0, -144), Vector2(0, -1440)]
@@ -505,9 +541,12 @@ offset_bottom = 55.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 25
-text = "Welcome to the NASA mission.
+text = "Welcome to Sky Wanderer.
 Your job is to explore the galaxy.
-From the NASA Base Station, we will guide you through your journey."
+From the NASA Base Station, we will guide you through your journey.
+
+First, you will visit planet XYZ.
+Get ready for take-off..."
 horizontal_alignment = 1
 vertical_alignment = 1
 visible_characters = 0
@@ -517,7 +556,36 @@ visible_ratio = 0.0
 libraries = {
 "": SubResource("AnimationLibrary_288vi")
 }
-speed_scale = 0.135
+speed_scale = 0.073
+
+[node name="Countdown" type="Label" parent="UserInterface/AnimatedText"]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -102.5
+offset_bottom = 102.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "3
+...
+2
+...
+1
+...
+
+Launching!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Countdown2" type="AnimationPlayer" parent="UserInterface/AnimatedText"]
+libraries = {
+"": SubResource("AnimationLibrary_rpcis")
+}
+speed_scale = 0.121
 
 [node name="TextureRect" type="TextureRect" parent="UserInterface"]
 layout_mode = 0
@@ -525,12 +593,12 @@ offset_top = -144.0
 offset_right = 1969.0
 offset_bottom = 1012.0
 texture = ExtResource("4_3jn5p")
+script = ExtResource("5_oqdqr")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="UserInterface/TextureRect"]
 libraries = {
 "": SubResource("AnimationLibrary_0dng1")
 }
-autoplay = "Quitar casco"
 
 [node name="CrouchCeilingDetection" type="ShapeCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
