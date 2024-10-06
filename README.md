@@ -22,7 +22,7 @@
   </a>
 </div>
 
-<h3 align="center">Exosky!</h3>
+<h3 align="center">Sky Wanderer - Exosky!</h3>
 
   <p align="center">
     NASA International Space Apps Challenge
@@ -46,7 +46,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#About The Project">About The Project</a>
+      <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#project-title-and-description">Project Title and Description</a></li>
         <li><a href="#built-with">Built With</a></li>
@@ -57,7 +57,7 @@
     <li>
         <a href="#Installation Instructions">Installation Instructions</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#references">References</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -65,7 +65,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The objective of this project is to is to create a model capable of predicting the country (from a list of nine) that will have the most surplus of green energy in the next hour.
+### Project Title and Description
+
+Title: Sky Wanderer 
+
+Overview: Our project, "Sky Wanderer" consists in a learning tool fundamentally conceived with the purpose to, not only make scientific data accessible and understandable to a non-technical audience, but also engage the general public with the unknown and encourage them to look beyond. We achieve this objective through awe-inspiring, but at the same time scientifically accurate simulations of unknown night-skies that only existed in each one´s imagination until know. 
+
+Problem Solved: Nasa SpaceApps 2024 Challenge: Exosky! 
+
 We can request the data from the [Gaia Data Release 3](https://www.cosmos.esa.int/web/gaia/data-release-3). 
 
 This data includes astrophysical parameters and source class probabilities for about 470 million and 1500 million sources, respectively, including stars, galaxies, and quasars. However, on this project we have focused on the position of the stars visible from a position diferent than Earth, that includes:
@@ -74,22 +81,38 @@ This data includes astrophysical parameters and source class probabilities for a
 - The parallax coordinate for the source in arcsecs.
 - The magnitude of the source from our point of view.
 
-We 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
-* [Tensorflow](https://www.tensorflow.org/)
-* [Scikit-learn](https://scikit-learn.org/)
-* [Numpy](https://numpy.org/)
-* [Pandas](https://pandas.pydata.org/)
-* [Matplotlib](https://matplotlib.org/)
-
+* [Godot](https://www.tensorflow.org/)
+* [ADQL](https://www.ivoa.net/documents/ADQL/20230418/PR-ADQL-2.1-20230418.html#tth_sEc4.6.1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Features
+
+Main feature: transforming equatorial coordinates to cartesian coordinates and modifying the reference system having the desired exoplanet at the origin. Our interface first gets, in real time, specific data from the Gaia Archive through a query. Therefore, every discovery of new celestial object is rendered in our app. 
+
+The visor provides a clearer immersive experience, simulating an astronaut's view of the sky from a distant planet, enhancing the storytelling aspect. 
+
+NVDA integration for people with some kind of visual impairment. 
+
+The project will feature educational content through informative pop-ups and audio descriptions, providing users with insights about celestial objects and exoplanetary systems, such as its shown in the example with Kepler. 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## References
+
+* [Gaia Data Release 3](https://www.cosmos.esa.int/web/gaia/data-release-3)
+* [NVDA Documentation](https://scikit-learn.org/)
+* [NVDA Executable for implementation on Godot](https://numpy.org/)
+* [NVDA Implementation](https://pandas.pydata.org/)
+* [NASA Heliophysics Information](https://matplotlib.org/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 ## Video Demo
 
