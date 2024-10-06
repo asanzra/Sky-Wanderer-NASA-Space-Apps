@@ -12,4 +12,11 @@ func _process(delta: float) -> void:
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		$AnimationPlayer.play("Quitar casco")
+		if Global.moved_up == 0:
+			$AnimationPlayer.play("Quitar casco")
+			Global.moved_up = 1
+		else:
+			$AnimationPlayer.play("Poner casco")
+			Global.moved_up = 0
+	
+		
