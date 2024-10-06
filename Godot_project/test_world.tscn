@@ -1,8 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://cs4drhmc1bql5"]
+[gd_scene load_steps=13 format=3 uid="uid://cs4drhmc1bql5"]
 
 [ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="1_e18vq"]
 [ext_resource type="Texture2D" uid="uid://cxia24ytv41wn" path="res://sprites/MilkyWayPanorama8K.jpg" id="2_xlo10"]
+[ext_resource type="Script" path="res://info.gd" id="4_50gqu"]
 [ext_resource type="Script" path="res://star_spawner2.gd" id="4_fx8j6"]
+[ext_resource type="Texture2D" uid="uid://bkfp7pdegb7uo" path="res://sprites/info_estrella.png" id="4_svqpd"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_qpdkk"]
 panorama = ExtResource("2_xlo10")
@@ -62,3 +64,11 @@ material = SubResource("StandardMaterial3D_67ysu")
 
 [node name="Node" type="Node" parent="."]
 script = ExtResource("4_fx8j6")
+
+[node name="Node2" type="Node" parent="."]
+script = ExtResource("4_50gqu")
+
+[node name="TextureRect" type="TextureRect" parent="Node2"]
+offset_right = 500.0
+offset_bottom = 1000.0
+texture = ExtResource("4_svqpd")
