@@ -40,6 +40,29 @@
 
 
 
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#About The Project">About The Project</a>
+      <ul>
+        <li><a href="#project-title-and-description">Project Title and Description</a><\li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#Features">Features</a></li>
+        <li><a href="#Usage">Usage</a></li>
+      </ul>
+    </li>
+    <li>
+        <a href="#Installation Instructions">Installation Instructions</a>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
 ## Video Demo
 
 <!-- https://github.com/user-attachments/assets/49a90214-1aa5-4647-beba-91c0dab4ede1 -->
