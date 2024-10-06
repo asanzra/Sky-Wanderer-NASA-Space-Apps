@@ -13,10 +13,12 @@ func _process(delta: float) -> void:
 func _input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if Global.moved_up == 0:
+			NvdaWrapper.say("Visor removed")
 			$AnimationPlayer.play("Quitar casco")
 			Global.moved_up = 1
 		else:
+			NvdaWrapper.say("Visor on")
 			$AnimationPlayer.play("Poner casco")
-			Global.moved_up = 0
+			Global.moved_up = 60
 	
 		
