@@ -1,0 +1,18 @@
+WITH cartesian_coords AS (
+	SELECT
+	source_id, ra, dec, parallax, phot_g_mean_mag,
+	(cos(radians(ra)) * cos(radians(dec))) / parallax AS x,
+    (sin(radians(ra)) * cos(radians(dec))) / parallax AS y,
+	(sin(radians(dec))) / parallax AS z
+	FROM gaiadr3.gaia_source_lite
+)
+SELECT TOP 10000
+        c.source_id, c.ra, c.dec, c.parallax, c.phot_g_mean_mag,
+        (((cos(radians(ra)) * cos(radians(dec))) / parallax) - (cos(radians(289.6579478868345)) * cos(radians(49.56965248175413))) / 7.254167087445477) AS x_rel,
+        (((sin(radians(ra)) * cos(radians(dec))) / parallax) - (sin(radians(289.6579478868345)) * cos(radians(49.56965248175413))) / 7.254167087445477) AS y_rel,
+        (((sin(radians(dec))) / parallax) - (sin(radians(49.56965248175413))) / 7.254167087445477) AS z_rel,
+		1 / parallax AS dist_T
+    FROM
+        cartesian_coords AS c
+WHERE (phot_g_mean_mag - 5 * LOG10 (dist_T / (SQRT(POWER(x_rel, 2) + POWER(y_rel, 2) + POWER(z_rel, 2))))) < 6
+ORDER BY phot_g_mean_mag ASC

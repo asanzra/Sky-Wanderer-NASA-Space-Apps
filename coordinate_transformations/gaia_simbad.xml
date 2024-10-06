@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Produced with astropy.io.votable version 6.1.4
+     http://www.astropy.org/ -->
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/VOTable-1.4.xsd">
+ <RESOURCE type="results">
+  <TABLE>
+   <FIELD ID="SOURCE_ID" datatype="long" name="SOURCE_ID" ucd="meta.id">
+    <DESCRIPTION>
+     Unique source identifier (unique within a particular Data
+     Release)
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="ra" datatype="double" name="ra" ucd="pos.eq.ra;meta.main" unit="deg" utype="stc:AstroCoords.Position3D.Value3.C1">
+    <DESCRIPTION>
+     Right ascension
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="dec" datatype="double" name="dec" ucd="pos.eq.dec;meta.main" unit="deg" utype="stc:AstroCoords.Position3D.Value3.C2">
+    <DESCRIPTION>
+     Declination
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="parallax" datatype="double" name="parallax" ucd="pos.parallax.trig" unit="mas">
+    <DESCRIPTION>
+     Parallax
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="phot_g_mean_mag" datatype="float" name="phot_g_mean_mag" ucd="phot.mag;em.opt" unit="mag">
+    <DESCRIPTION>
+     G-band mean magnitude
+    </DESCRIPTION>
+   </FIELD>
+   <FIELD ID="RA_hms" arraysize="11" datatype="unicodeChar" name="RA_hms"/>
+   <FIELD ID="Dec_dms" arraysize="12" datatype="unicodeChar" name="Dec_dms"/>
+   <DATA>
+    <TABLEDATA>
+     <TR>
+      <TD>2132637359106746880</TD>
+      <TD>289.6579478868345</TD>
+      <TD>49.56965248175413</TD>
+      <TD>7.254167087445477</TD>
+      <TD>5.9998903</TD>
+      <TD>19:18:37.91</TD>
+      <TD>49:34:10.75</TD>
+     </TR>
+     <TR>
+      <TD>3615605075815062784</TD>
+      <TD>208.9497146829642</TD>
+      <TD>-9.559946613178838</TD>
+      <TD/>
+      <TD>5.9996376</TD>
+      <TD>13:55:47.93</TD>
+      <TD>-9:33:35.81</TD>
+     </TR>
+     <TR>
+      <TD>3042058853965020928</TD>
+      <TD>115.14809047476474</TD>
+      <TD>-8.18554363180619</TD>
+      <TD>11.388414271425546</TD>
+      <TD>5.999576</TD>
+      <TD>7:40:35.54</TD>
+      <TD>-8:11:07.96</TD>
+     </TR>
+     <TR>
+      <TD>6765638956627340672</TD>
+      <TD>291.1258040394893</TD>
+      <TD>-27.86600915153769</TD>
+      <TD>4.468563804827652</TD>
+      <TD>5.9994454</TD>
+      <TD>19:24:30.19</TD>
+      <TD>-27:51:57.63</TD>
+     </TR>
+     <TR>
+      <TD>1422359410270340352</TD>
+      <TD>263.3817676187722</TD>
+      <TD>57.55874047754693</TD>
+      <TD>5.019068751773522</TD>
+      <TD>5.999423</TD>
+      <TD>17:33:31.62</TD>
+      <TD>57:33:31.47</TD>
+     </TR>
+     <TR>
+      <TD>2935836306920185600</TD>
+      <TD>107.38900158765146</TD>
+      <TD>-16.234504865377836</TD>
+      <TD>0.7035798831838791</TD>
+      <TD>5.9993997</TD>
+      <TD>7:09:33.36</TD>
+      <TD>-16:14:04.22</TD>
+     </TR>
+     <TR>
+      <TD>4965839611383992064</TD>
+      <TD>38.06179269378518</TD>
+      <TD>-36.42725042625963</TD>
+      <TD>7.22583601291733</TD>
+      <TD>5.9993024</TD>
+      <TD>2:32:14.83</TD>
+      <TD>-36:25:38.10</TD>
+     </TR>
+     <TR>
+      <TD>993456588748638976</TD>
+      <TD>101.04823538591637</TD>
+      <TD>53.29504140982081</TD>
+      <TD>12.64171371029519</TD>
+      <TD>5.999134</TD>
+      <TD>6:44:11.58</TD>
+      <TD>53:17:42.15</TD>
+     </TR>
+     <TR>
+      <TD>5019106070666178944</TD>
+      <TD>27.331364790039448</TD>
+      <TD>-31.07252936790864</TD>
+      <TD>7.0374426387129025</TD>
+      <TD>5.999063</TD>
+      <TD>1:49:19.53</TD>
+      <TD>-31:04:21.11</TD>
+     </TR>
+     <TR>
+      <TD>13898793343318144</TD>
+      <TD>47.161619603691</TD>
+      <TD>8.47140235195367</TD>
+      <TD>8.021724569884904</TD>
+      <TD>5.998988</TD>
+      <TD>3:08:38.79</TD>
+      <TD>8:28:17.05</TD>
+     </TR>
+    </TABLEDATA>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>
