@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bsou7tc2fop2v"
+
+[deps]
+
+files=["res://csv tables/test-cone1000.x.translation", "res://csv tables/test-cone1000.y.translation", "res://csv tables/test-cone1000.z.translation", "res://csv tables/test-cone1000.phot.translation", "res://csv tables/test-cone1000.phot.translation", "res://csv tables/test-cone1000.dist.translation", "res://csv tables/test-cone1000.dist.translation", "res://csv tables/test-cone1000.ra.translation", "res://csv tables/test-cone1000.dec.translation", "res://csv tables/test-cone1000.parallax.translation"]
+
+source_file="res://csv tables/test-cone1000.csv"
+dest_files=["res://csv tables/test-cone1000.x.translation", "res://csv tables/test-cone1000.y.translation", "res://csv tables/test-cone1000.z.translation", "res://csv tables/test-cone1000.phot.translation", "res://csv tables/test-cone1000.phot.translation", "res://csv tables/test-cone1000.dist.translation", "res://csv tables/test-cone1000.dist.translation", "res://csv tables/test-cone1000.ra.translation", "res://csv tables/test-cone1000.dec.translation", "res://csv tables/test-cone1000.parallax.translation"]
+
+[params]
+
+compress=true
+delimiter=0

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bbcgp761syi3u"
+
+[deps]
+
+files=["res://csv tables/test1000.phot.translation", "res://csv tables/test1000.x.translation", "res://csv tables/test1000.y.translation", "res://csv tables/test1000.z.translation", "res://csv tables/test1000.dist.translation"]
+
+source_file="res://csv tables/test1000.csv"
+dest_files=["res://csv tables/test1000.phot.translation", "res://csv tables/test1000.x.translation", "res://csv tables/test1000.y.translation", "res://csv tables/test1000.z.translation", "res://csv tables/test1000.dist.translation"]
+
+[params]
+
+compress=true
+delimiter=0

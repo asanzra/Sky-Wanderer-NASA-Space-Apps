@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="1_e18vq"]
 [ext_resource type="Shader" path="res://black_sky_shader.gdshader" id="2_mmfcg"]
-[ext_resource type="Script" path="res://star_spawner.gd" id="5_j756e"]
+[ext_resource type="Script" path="res://star_spawner2.gd" id="4_fx8j6"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_j2osq"]
 shader = ExtResource("2_mmfcg")
@@ -58,4 +58,6 @@ size = Vector3(30, 1, 30)
 material = SubResource("StandardMaterial3D_67ysu")
 
 [node name="StarSpawner" type="Node3D" parent="."]
-script = ExtResource("5_j756e")
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("4_fx8j6")
