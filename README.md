@@ -117,7 +117,7 @@ This will let you download and use our app as long as you have a Windows OS.
 ## References
 
 * [Gaia Data Release 3](https://www.cosmos.esa.int/web/gaia/data-release-3)
-* [Gaia Data Release 3n Documentation](https://gea.esac.esa.int/archive/documentation/GDR3/Gaia_archive/chap_datamodel/sec_dm_main_source_catalogue/ssec_dm_gaia_source.html#gaia_source-parallax)
+* [Gaia Data Release 3 Documentation](https://gea.esac.esa.int/archive/documentation/GDR3/Gaia_archive/chap_datamodel/sec_dm_main_source_catalogue/ssec_dm_gaia_source.html#gaia_source-parallax)
 * [NVDA Documentation](https://scikit-learn.org/)
 * [NVDA Executable for implementation on Godot](https://numpy.org/)
 * [NVDA Implementation](https://pandas.pydata.org/)
